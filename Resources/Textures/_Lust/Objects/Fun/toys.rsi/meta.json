@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "alisa_simonova_de_mori"
+    },
+    {
+      "name": "dragonaft"
+    },
+    {
+      "name": "sai_haks1"
+    },
+    {
+      "name": "sai_haks2"
+    },
+    {
+      "name": "mira"
+    },
+    {
+      "name": "plushie_pinkers"
+    },
+    {
+      "name": "plushie_vaxel"
+    },
+    {
+      "name": "plushie-aname"
+    },
+    {
+      "name": "plushie-aname-unshaded"
+    },
+    {
+      "name": "plushie-anna"
+    },
+    {
+      "name": "sasha_chernyh"
+    },
+    {
+      "name": "kharsha"
+    },
+    {
+      "name": "eupha_everek"
+    },
+    {
+      "name": "plushie_rend"
+    },
+    {
+      "name": "alexandr_limenski"
+    },
+    {
+      "name": "plushiechitas"
+    },
+    {
+      "name": "ded_plushie"
+      },
+    {
+      "name": "bykov"
+      }
+  ]
+}
