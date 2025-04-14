@@ -49,6 +49,7 @@ public sealed class ClientClothingSystem : ClothingSystem
         {"pants", "PANTS"}, // Sunrise-edit
         {"socks", "SOCKS"}, // Sunrise-edit
         {"bra", "BRA"}, // Sunrise-edit
+        {"plug", "PLUG"}, // Sunrise-edit
         {"id", "IDCARD"},
         {"pocket1", "POCKET1"},
         {"pocket2", "POCKET2"},
@@ -332,6 +333,12 @@ public sealed class ClientClothingSystem : ClothingSystem
                     }
 
                     break;
+                // Lust-start
+                case Sex.Futanari:
+                    if (inventory.FemaleDisplacements.Count > 0)
+                        displacementData = inventory.FemaleDisplacements.GetValueOrDefault(slot);
+                    break;
+                // Lust-end
             }
         }
 

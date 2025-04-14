@@ -14,6 +14,7 @@
   femaleFirstNames: NamesMothFirstFemale
   maleLastNames: NamesMothLast
   femaleLastNames: NamesMothLast
+  sexes: [Male, Female, Futanari] # Lust-edit
 
 - type: bodyType
   id: MothNormal

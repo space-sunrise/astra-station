@@ -5,6 +5,10 @@
   name: Urist McXeno
   abstract: true
   components:
+  # Sunrise-Lust edit start
+  - type: Interaction
+    erp: true
+  # Sunrise-Lust edit end
   - type: Absorbable
   - type: Respirator
     damage:
@@ -77,6 +81,7 @@
     - map: ["bra"]
     - map: ["pants"]
     - map: ["socks"]
+    - map: ["plug"]
     - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]

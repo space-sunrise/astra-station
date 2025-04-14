@@ -105,6 +105,12 @@
   - type: InnateItem
     worldTargetActions:
     - Emag
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+  - type: StandingState
+  # Lust-end
 
 - type: startingGear
   id: SyndiReaperHardsuitGear
@@ -226,6 +232,12 @@
     instantActions:
     - PortableSurveillanceCameraMonitor
     - HandheldCrewMonitorBorg
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+  - type: StandingState
+  # Lust-end
 
 - type: entity
   id: BorgChassisSyndicateHeavy
@@ -334,6 +346,12 @@
   - type: InnateItem
     worldTargetActions:
     - Emag
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+  - type: StandingState
+  # Lust-end
 
 - type: entity
   id: BorgChassisSyndicateSpider
@@ -413,3 +431,9 @@
   - type: InnateItem
     worldTargetActions:
     - Emag
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+  - type: StandingState
+  # Lust-end

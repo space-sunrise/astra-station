@@ -824,10 +824,20 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("body_type");
 
+                    b.Property<string>("AnalVirginity")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("anal_virginity");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("char_name");
+
+                    b.Property<string>("Erp")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("erp");
 
                     b.Property<string>("EyeColor")
                         .IsRequired()
@@ -898,11 +908,18 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("species");
-
+                    // LUST START
+                    b.Property<string>("Virginity")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("virginity");
+                    // LUST END
+                    // Sunrise-TTS-Start
                     b.Property<string>("Voice")
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("voice");
+                    // Sunrise-TTS-End
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

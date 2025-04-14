@@ -1,5 +1,6 @@
 using Content.Shared.Access;
 using Content.Shared.Guidebook;
+using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.StatusIcon;
@@ -178,6 +179,11 @@ namespace Content.Shared.Roles
         [DataField]
         public SpriteSpecifier PreviewIcon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Sunrise/Interface/Misc/job_preview.rsi"), "test");
         // Sunrise-End
+
+        // Sunrise-Lust start
+        [DataField("sexBlacklist")]
+        public List<Sex> SexBlacklist = new();
+        // Sunrise-Lust end
     }
 
     /// <summary>

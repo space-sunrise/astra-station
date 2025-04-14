@@ -13,6 +13,7 @@
   maleFirstNames: NamesReptilianMale
   femaleFirstNames: NamesReptilianFemale
   naming: FirstDashFirst
+  sexes: [Male, Female, Futanari] # Lust-edit
 
 - type: bodyType
   id: ReptilianNormal

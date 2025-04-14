@@ -5,6 +5,10 @@
   id: MobFelinidBase
   abstract: true
   components:
+  # Sunrise-Lust edit start
+  - type: Interaction
+    erp: true
+  # Sunrise-Lust edit end
   - type: Absorbable
   - type: OwOAccent
   - type: Speech
@@ -154,6 +158,7 @@
       Male: MaleFelinid
       Female: FemaleFelinid
       Unsexed: MaleFelinid
+      Futanari: FemaleFelinid # Lust-edit
   - type: Respirator
     damage:
       types:

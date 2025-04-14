@@ -4,6 +4,8 @@
   abstract: true
   components:
   - type: Absorbable
+  - type: Interaction
+    erp: true
   - type: Hunger
   - type: Thirst
     dehydrationDamage:
@@ -84,6 +86,7 @@
     - map: ["bra"]
     - map: ["pants"]
     - map: ["socks"]
+    - map: ["plug"]
     - map: ["jumpsuit"]
     # Sunrise-end
     - map: [ "gloves" ]

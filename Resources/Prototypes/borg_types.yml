@@ -35,10 +35,20 @@
   spriteHasMindState: robot_e
   spriteNoMindState: robot_e_r
   spriteToggleLightState: robot_l
+  spriteRestingState: robot_rest # Lust-edit
+  spriteWreckState: robot_wreck # Lust-edit
 
   # Pet
   petSuccessString: petting-success-generic-cyborg
   petFailureString: petting-failure-generic-cyborg
+
+  # Lust-start
+  addComponents:
+  - type: ActionGrant
+    actions:
+    - RestActionRobot
+    - ActionViewLaws
+  # Lust-end
 
 
 # Engineering borg
@@ -81,6 +91,12 @@
     - AtmosAlertsMonitor
     - EngiAlertsMonitor
   # Sunrise-End
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+    - RestActionEngineer
+  # Lust-end
 
   # Visual
   inventoryTemplateId: borgShort
@@ -88,6 +104,8 @@
   spriteHasMindState: engineer_e
   spriteNoMindState: engineer_e_r
   spriteToggleLightState: engineer_l
+  spriteRestingState: engineer_rest # Lust-edit
+  spriteWreckState: engineer_wreck # Lust-edit
 
   # Pet
   petSuccessString: petting-success-engineer-cyborg
@@ -132,14 +150,24 @@
   # Visual
   inventoryTemplateId: borgTall
   spriteBodyState: miner
-  spriteBodyMovementState: miner_moving
+#  spriteBodyMovementState: miner_moving # Lust-edit
   spriteHasMindState: miner_e
   spriteNoMindState: miner_e_r
   spriteToggleLightState: miner_l
+  spriteRestingState: miner_rest #Lust-edit
+  spriteWreckState: miner_wreck #Lust-edit
 
   # Pet
   petSuccessString: petting-success-salvage-cyborg
   petFailureString: petting-failure-salvage-cyborg
+
+  # Lust-start
+  addComponents:
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+    - RestActionMiner
+  # Lust-end
 
 
 # Janitor borg
@@ -171,7 +199,7 @@
 
   # Sunrise-Start
   footstepCollection:
-    collection: FootstepJanitorBorg
+    collection: FootstepCyborgSpider # Lust-edit
     params:
       volume: -5
   # Sunrise-Start
@@ -179,16 +207,24 @@
   # Visual
   inventoryTemplateId: borgShort
   spriteBodyState: janitor
-  spriteBodyMovementState: janitor_moving
+#  spriteBodyMovementState: janitor_moving # Lust-edit
   spriteHasMindState: janitor_e
   spriteNoMindState: janitor_e_r
   spriteToggleLightState: janitor_l
+  spriteRestingState: janitor_rest #Lust-edit
+  spriteWreckState: janitor_wreck #Lust-edit
 
   # Pet
   petSuccessString: petting-success-janitor-cyborg
   petFailureString: petting-failure-janitor-cyborg
   addComponents:
   - type: FootprintAreaCleaner
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+    - RestActionJanitor
+  # Lust-end
 
 
 # Medical borg
@@ -240,14 +276,22 @@
     worldTargetActions:
     - HandheldHealthAnalyzerUnpowered
   # Sunrise-End
+  # Lust-start
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+    - RestActionMedical
+  # Lust-end
 
   # Visual
   inventoryTemplateId: borgDutch
   spriteBodyState: medical
-  spriteBodyMovementState: medical_moving
+#  spriteBodyMovementState: medical_moving # Lust-edit
   spriteHasMindState: medical_e
   spriteNoMindState: medical_e_r
   spriteToggleLightState: medical_l
+  spriteRestingState: medical_rest # Lust-edit
+  spriteWreckState: medical_wreck # Lust-edit
 
   # Pet
   petSuccessString: petting-success-medical-cyborg
@@ -291,7 +335,16 @@
   spriteHasMindState: service_e
   spriteNoMindState: service_e_r
   spriteToggleLightState: service_l
+  spriteRestingState: service_rest # Lust-edit
+  spriteWreckState: service_wreck # Lust-edit
 
   # Pet
   petSuccessString: petting-success-service-cyborg
   petFailureString: petting-failure-service-cyborg
+  # Lust-start
+  addComponents:
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+    - RestActionService
+  # Lust-end

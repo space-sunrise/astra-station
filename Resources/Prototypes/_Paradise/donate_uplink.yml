@@ -1,0 +1,38 @@
+- type: entity
+  parent: BaseDonationPlink
+  id: ProjectParadiseUplink50
+  categories: [ HideSpawnMenu ]
+  name: Портативный магазин Парадайз
+  description: Has a wide range of products for all tastes and preferences - from amazing handicrafts and unique souvenirs to modern appliances and fashion accessories.
+  suffix: 50
+  components:
+  - type: Store
+    balance:
+      ParadiseCoin: 50
+  - type: Item
+    size: Small
+    sprite: _Paradise/paradise_uplink.rsi
+  - type: Sprite
+    sprite: _Paradise/paradise_uplink.rsi
+    layers:
+    - state: icon-on
+
+- type: entity
+  parent: ProjectParadiseUplink50
+  id: ProjectParadiseUplink80
+  categories: [ HideSpawnMenu ]
+  suffix: 80
+  components:
+  - type: Store
+    balance:
+      ParadiseCoin: 80
+
+- type: entity
+  parent: ProjectParadiseUplink50
+  id: ProjectParadise100
+  categories: [ HideSpawnMenu ]
+  suffix: 100
+  components:
+  - type: Store
+    balance:
+      ParadiseCoin: 100

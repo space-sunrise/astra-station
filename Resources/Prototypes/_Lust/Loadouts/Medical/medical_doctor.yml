@@ -1,0 +1,6 @@
+﻿# Neck
+- type: loadout # Lust Station
+  id: MedicalCloak
+  sponsorOnly: true
+  equipment:
+    neck: ClothingNeckMedCloak

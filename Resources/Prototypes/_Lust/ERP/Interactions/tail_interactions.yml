@@ -1,0 +1,20 @@
+- type: interaction
+  id: PatTail
+  name: Погладить хвост
+  icon: _Lust/Interface/ERP/pat_tail.png
+  emotes:
+  - нежно гладит хвостик %target
+  - ласково проводит ладонью по хвосту %target
+  - игриво поглаживает ладонью хвостик %target
+  userSex:
+  - Unsexed
+  targetSex:
+  - Unsexed
+  erp: false
+  lovePercentUser: 3
+  lovePercentTarget: 6
+  userMoanChance: 0
+  targetMoanChance: 0
+  targetTagWhitelist:
+  - Tail
+  category: хвост

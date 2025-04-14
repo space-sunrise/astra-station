@@ -407,6 +407,9 @@ namespace Content.Server.Database
 
         public string BodyType { get; set; } = null!;
 
+        public string Erp { get; set; } = null!; // Lust-ERP
+        public string Virginity { get; set; } = null!; // Lust-ERP
+        public string AnalVirginity { get; set; } = null!; // Lust-ERP
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
         public string Voice { get; set; } = null!; // Sunrise-TTS
@@ -758,7 +761,7 @@ namespace Content.Server.Database
     public enum ServerBanExemptFlags
     {
         // @formatter:off
-        None       = 0,
+        None = 0,
 
         /// <summary>
         /// Ban is a datacenter range, connections usually imply usage of a VPN service.
