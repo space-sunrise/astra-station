@@ -26,6 +26,7 @@
     - map: ["bra"]
     - map: ["pants"]
     - map: ["socks"]
+    - map: ["plug"]
     - map: ["jumpsuit"]
     # Sunrise-end
     - map: ["enum.HumanoidVisualLayers.LHand"]
@@ -192,6 +193,8 @@
   - type: Stripping
   - type: UserInterface
     interfaces:
+      enum.InteractionKey.Key:
+        type: InteractionBoundUserInterface
       enum.HumanoidMarkingModifierKey.Key:
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:
@@ -217,6 +220,7 @@
       Male: MaleHuman
       Female: FemaleHuman
       Unsexed: MaleHuman
+      Futanari: FemaleHuman # Lust-Edit
   - type: Emoting
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
@@ -364,6 +368,7 @@
     - map: ["bra"]
     - map: ["pants"]
     - map: ["socks"]
+    - map: ["plug"]
     - map: ["jumpsuit"]
     # Sunrise-end
     - map: ["enum.HumanoidVisualLayers.LHand"]

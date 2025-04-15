@@ -18,6 +18,7 @@
   youngAge: 23
   oldAge: 46
   maxAge: 49
+  sexes: [Male, Female, Futanari] # Lust-edit
 
 - type: bodyType
   id: TajaranNormal

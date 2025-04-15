@@ -144,6 +144,7 @@
   - CaptainMantle
   - CaptainEliteCloak # Sunrise-Edit
   - CapitainScarf # Sunrise-Edit
+  - CaptainSpecialCloak # Lust Station
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -184,6 +185,7 @@
   - HoPCloak
   - HoPMantle
   - HoPScarf # Sunrise-Edit
+  - HopSpecialCloak # Lust Station
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -658,6 +660,7 @@
   - QuartermasterCloak
   - QuartermasterMantle
   - QuartermasterScarf # Sunrise-Edit
+  - QuartermasterSpecialCloak # Lust Station
 #Sunrise-start
   - Sunrise-ScarfOrange
   - Sunrise-ScarfYellow
@@ -982,6 +985,7 @@
   - ResearchDirectorMantle
   - ResearchDirectorCloak
   - ResearchDirectorScarf # Sunrise-Edit
+  - RdSpecialCloak # Lust Station
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -1096,6 +1100,7 @@
   - HeadofSecurityDarthHOSCloak #Sunrise-Edit
   - HeadofSecurityCloakHOSCloak #Sunrise-Edit
   - HeadofSecurityScarf #Sunrise-Edit
+  - HosSpecialCloak # Lust Station
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1167,6 +1172,7 @@
   name: loadout-group-security-belt
   loadouts:
   - SecurityBelt
+  - SecuritySheathBelt # Lust Station
   - SecurityWebbing
 
 - type: loadoutGroup
@@ -1198,6 +1204,7 @@
   minLimit: 0
   loadouts:
   - DetectiveTie
+  - SecurityCloak # Lust Station
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
@@ -1317,6 +1324,7 @@
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
   - ChiefMedicalOfficerScarf # Sunrise-Edit
+  - CmoSpecialCloak # Lust Station
 # Sunrise-start
   - Sunrise-ScarfRed
   - Sunrise-ScarfOrange

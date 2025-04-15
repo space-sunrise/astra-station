@@ -194,6 +194,36 @@ namespace Content.Client.Lobby.UI
 
             #endregion Sex
 
+            #region Erp
+
+            ErpButton.OnItemSelected += args =>
+            {
+                ErpButton.SelectId(args.Id);
+                SetErp((Erp)args.Id);
+            };
+
+            #endregion Erp
+
+            #region Virginity
+
+            VirginityButton.OnItemSelected += args =>
+            {
+                VirginityButton.SelectId(args.Id);
+                SetVirginity((Virginity)args.Id);
+            };
+
+            #endregion Virginity
+
+            #region AnalVirginity
+
+            AnalVirginityButton.OnItemSelected += args =>
+            {
+                AnalVirginityButton.SelectId(args.Id);
+                SetAnalVirginity((Virginity)args.Id);
+            };
+
+            #endregion AnalVirginity
+
             #region Age
 
             AgeEdit.OnTextChanged += args =>
@@ -353,7 +383,7 @@ namespace Content.Client.Lobby.UI
                 ReloadPreview();
             };
 
-            FacialHairPicker.OnSlotAdd += delegate()
+            FacialHairPicker.OnSlotAdd += delegate ()
             {
                 if (Profile is null)
                     return;
@@ -603,7 +633,7 @@ namespace Content.Client.Lobby.UI
                 {
                     TraitsList.AddChild(new Label
                     {
-                        Text = Loc.GetString("humanoid-profile-editor-trait-count-hint", ("current", selectionCount) ,("max", category.MaxTraitPoints)),
+                        Text = Loc.GetString("humanoid-profile-editor-trait-count-hint", ("current", selectionCount), ("max", category.MaxTraitPoints)),
                         FontColorOverride = Color.Gray
                     });
                 }
@@ -795,6 +825,9 @@ namespace Content.Client.Lobby.UI
             UpdateNameEdit();
             UpdateFlavorTextEdit();
             UpdateSexControls();
+            UpdateErpControls();
+            UpdateVirginityControls();
+            UpdateAnalVirginityControls();
             UpdateGenderControls();
             UpdateSkinColor();
             UpdateSpawnPriorityControls();
@@ -1263,6 +1296,11 @@ namespace Content.Client.Lobby.UI
                 case Sex.Female:
                     Profile = Profile?.WithGender(Gender.Female);
                     break;
+                // Lust-start
+                case Sex.Futanari:
+                    Profile = Profile?.WithGender(Gender.Female);
+                    break;
+                // Lust-end
                 default:
                     Profile = Profile?.WithGender(Gender.Epicene);
                     break;
@@ -1274,6 +1312,24 @@ namespace Content.Client.Lobby.UI
             RefreshLoadouts(); // Sunrise-Sex restrictions
             Markings.SetSex(newSex);
             ReloadPreview();
+        }
+
+        private void SetErp(Erp newErp)
+        {
+            Profile = Profile?.WithErp(newErp);
+            SetDirty();
+        }
+
+        private void SetVirginity(Virginity newVirginity)
+        {
+            Profile = Profile?.WithVirginity(newVirginity);
+            SetDirty();
+        }
+
+        private void SetAnalVirginity(Virginity newVirginity)
+        {
+            Profile = Profile?.WithAnalVirginity(newVirginity);
+            SetDirty();
         }
 
         private void SetGender(Gender newGender)
@@ -1397,6 +1453,79 @@ namespace Content.Client.Lobby.UI
                 SexButton.SelectId((int) Profile.Sex);
             else
                 SexButton.SelectId((int) sexes[0]);
+        }
+
+        private void UpdateErpControls()
+        {
+            if (Profile == null)
+                return;
+
+            ErpButton.Clear();
+
+            var erps = new List<Erp>
+            {
+                Erp.Yes,
+                Erp.Ask,
+                Erp.No
+            };
+            // add button for each sex
+            foreach (var sex in erps)
+            {
+                ErpButton.AddItem(Loc.GetString($"humanoid-profile-editor-erp-{sex.ToString().ToLower()}-text"), (int)sex);
+            }
+
+            if (erps.Contains(Profile.Erp))
+                ErpButton.SelectId((int)Profile.Erp);
+            else
+                ErpButton.SelectId((int)erps[2]);
+        }
+
+        private void UpdateVirginityControls()
+        {
+            if (Profile == null)
+                return;
+
+            VirginityButton.Clear();
+
+            var virginities = new List<Virginity>
+            {
+                Virginity.Yes,
+                Virginity.No
+            };
+            // add button for each sex
+            foreach (var sex in virginities)
+            {
+                VirginityButton.AddItem(Loc.GetString($"humanoid-profile-editor-virginity-{sex.ToString().ToLower()}-text"), (int)sex);
+            }
+
+            if (virginities.Contains(Profile.Virginity))
+                VirginityButton.SelectId((int)Profile.Virginity);
+            else
+                VirginityButton.SelectId((int)virginities[0]);
+        }
+
+        private void UpdateAnalVirginityControls()
+        {
+            if (Profile == null)
+                return;
+
+            AnalVirginityButton.Clear();
+
+            var virginities = new List<Virginity>
+            {
+                Virginity.Yes,
+                Virginity.No
+            };
+            // add button for each sex
+            foreach (var sex in virginities)
+            {
+                AnalVirginityButton.AddItem(Loc.GetString($"humanoid-profile-editor-anal-virginity-{sex.ToString().ToLower()}-text"), (int)sex);
+            }
+
+            if (virginities.Contains(Profile.AnalVirginity))
+                AnalVirginityButton.SelectId((int)Profile.AnalVirginity);
+            else
+                AnalVirginityButton.SelectId((int)virginities[0]);
         }
 
         private void UpdateSkinColor()

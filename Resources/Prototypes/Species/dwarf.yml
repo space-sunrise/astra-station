@@ -9,3 +9,4 @@
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobDwarfDummy
   skinColoration: HumanToned
+  sexes: [Male, Female, Futanari] # Lust-edit

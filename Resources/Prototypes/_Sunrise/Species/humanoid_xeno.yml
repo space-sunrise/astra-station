@@ -9,7 +9,7 @@
   markingLimits: MobHumanoidXenoMarkingLimits
   dollPrototype: MobXenoDummy
   skinColoration: TintedHues
-  sponsorOnly: true
+  sponsorOnly: false # Lust-edit
 
 - type: bodyType
   id: HumanoidXenoNormal

@@ -1,0 +1,6 @@
+- type: currency
+  id: ParadiseCoin
+  displayName: Paradise Coin
+  cash:
+    1: ParadisCoin1
+  canWithdraw: true

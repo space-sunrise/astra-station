@@ -874,10 +874,20 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("body_type");
 
+                    b.Property<string>("AnalVirginity")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("anal_virginity");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("char_name");
+
+                    b.Property<string>("Erp")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("erp");
 
                     b.Property<string>("EyeColor")
                         .IsRequired()
@@ -949,10 +959,19 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("species");
 
+                    // LUST START
+                    b.Property<string>("Virginity")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("virginity");
+                    // LUST END
+
+                    // Sunrise-TTS-Start
                     b.Property<string>("Voice")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("voice");
+                    // Sunrise-TTS-End
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

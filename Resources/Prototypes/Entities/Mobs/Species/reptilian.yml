@@ -6,6 +6,8 @@
   abstract: true
   components:
   - type: Absorbable
+  - type: Interaction
+    erp: true
   - type: HumanoidAppearance
     species: Reptilian
     hideLayersOnEquip:
@@ -43,6 +45,7 @@
       Male: MaleReptilian
       Female: FemaleReptilian
       Unsexed: MaleReptilian
+      Futanari: FemaleReptilian # Lust-edit
   - type: BodyEmotes
     soundsId: ReptilianBodyEmotes
   - type: Damageable

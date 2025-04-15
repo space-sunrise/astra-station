@@ -1,3 +1,4 @@
+﻿using Content.Server._Lust.ErpStatus;
 using Content.Server.Access.Systems;
 using Content.Server.Holiday;
 using Content.Server.Humanoid;
@@ -7,6 +8,7 @@ using Content.Server.PDA;
 using Content.Server.Spawners.Components;
 using Content.Server.Station.Components;
 using Content.Shared._Sunrise.SunriseCCVars;
+using Content.Shared._Sunrise.ERP.Components;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.CCVar;
@@ -29,7 +31,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
-using Content.Sunrise.Interfaces.Shared; // Sunrise-Sponsors
+using Content.Sunrise.Interfaces.Shared;
 
 namespace Content.Server.Station.Systems;
 
@@ -226,6 +228,13 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
                 }
             }
             // Sunrise-End
+            // Lust-Station-Start
+            EnsureComp<ErpStatusComponent>(entity.Value).Erp = profile.Erp;
+            if (profile.Erp == Erp.No) { EnsureComp<InteractionComponent>(entity.Value).Erp = false; }
+            EnsureComp<InteractionComponent>(entity.Value).Virginity = profile.Virginity;
+            EnsureComp<InteractionComponent>(entity.Value).AnalVirginity = profile.AnalVirginity;
+            if (EnsureComp<InteractionComponent>(entity.Value).Erp == false) { profile.Erp = Erp.No; }
+            // Lust-Station-End
         }
 
         DoJobSpecials(job, entity.Value);

@@ -22,7 +22,7 @@
     - SimpleHostile
   - type: Sprite
     drawdepth: SmallMobs
-    sprite: Mobs/Animals/regalrat.rsi
+    sprite: _Lust/Mobs/Animals/regalrat.rsi # Sunrise-Lust edit
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: regalrat
@@ -123,7 +123,7 @@
     - MinorAntagonists
   - type: Grammar
     attributes:
-      gender: male
+      gender: female
   - type: Sharp
   # Sunrise-start
   - type: Bloodstream
@@ -131,6 +131,10 @@
     bloodRefreshAmount: 1.5
   - type: VentCrawler
   # Sunrise-end
+  # Sunrise-Lust start
+  - type: TTS
+    voice: Planya
+  # Sunrise-Lust end
 
 - type: entity
   id: MobRatKingBuff

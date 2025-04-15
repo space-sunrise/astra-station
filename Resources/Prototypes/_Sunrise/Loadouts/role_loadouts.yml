@@ -7,6 +7,7 @@
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -19,6 +20,7 @@
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -51,6 +53,7 @@
   - Pants
   - Socks
   - CommonPets
+  - SpecialLoadout # Lust Station
 
 - type: roleLoadout
   id: JobCentCommOfficial
@@ -60,6 +63,7 @@
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -73,6 +77,7 @@
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -86,6 +91,7 @@
   - Trinkets
   - SurvivalSecurity
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -108,6 +114,7 @@
   - Pants
   - Socks
   - CommonPets
+  - SpecialLoadout # Lust Station
 
 - type: roleLoadout
   id: JobSeniorResearcher
@@ -120,6 +127,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -142,6 +150,7 @@
   - MedicalTrinkets
   - Glasses
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -183,6 +192,7 @@
   - Trinkets
   - TrinketsEngineering
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -200,6 +210,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -216,6 +227,7 @@
   - Trinkets
   - SurvivalExtended
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -231,6 +243,7 @@
   - SecurityTrinkets
   - SurvivalSecurity
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -244,6 +257,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -260,6 +274,7 @@
   - Trinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -281,6 +296,7 @@
   - Pants
   - Socks
   - CommonPets
+  - SpecialLoadout # Lust Station
 
 - type: roleLoadout
   id: JobPrisonChef
@@ -295,6 +311,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -315,6 +332,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -331,6 +349,7 @@
   - Trinkets
   - SecurityTrinkets
   - GroupSpeciesBreathToolSecurity
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -345,6 +364,7 @@
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -358,6 +378,7 @@
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks
@@ -368,6 +389,7 @@
   groups:
   - PrisonerJumpsuit
   - GroupSpeciesBreathTool
+  - SpecialLoadout # Lust Station
   - Bra
   - Pants
   - Socks

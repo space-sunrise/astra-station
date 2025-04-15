@@ -11,6 +11,7 @@
   dollPrototype: MobDemonDummy
   skinColoration: Hues
   naming: firstlast
+  sexes: [Male, Female, Futanari] # Lust-edit
 
 - type: bodyType
   id: DemonNormal

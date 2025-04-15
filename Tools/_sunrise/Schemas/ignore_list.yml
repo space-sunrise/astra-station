@@ -154,6 +154,11 @@ ignore_list:
   - 'v 1.6'
   - 'Sol Dry'
   - 'Ds ujdjhbnt nhfyckbnjv.'
+  # Sunrise-Lust start
+  - 'Qillu'
+  - 'QL'
+  - 'ERP'
+  # Sunrise-Lust end
 
 ignore_files:
   - 'italian.ftl'
@@ -176,3 +181,21 @@ ignore_files:
   - 'flesh_hugger.ftl'
   - 'flesh_spider.ftl'
   - 'spells-actions.ftl'
+  # Sunrise-Lust start
+  - 'friendly_interactions.yml'
+  - 'anal_interactions.yml'
+  - 'ears_interactions.yml'
+  - 'neck_interactions.yml'
+  - 'pussy_interactions.yml'
+  - 'cock_interactions.yml'
+  - 'mouth_interactions.yml'
+  - 'lips_interactions.yml'
+  - 'boobs_interactions.yml'
+  - 'face_interactions.yml'
+  - 'feet_interactions.yml'
+  - 'horn_interactions.yml'
+  - 'cheeks_interactions.yml'
+  - 'thighs_interactions.yml'
+  - 'toyInteractions.yml'
+  - 'butt_interactions.yml'
+  # Sunrise-Lust end
