@@ -8,7 +8,7 @@
   components:
   - type: Store
     balance:
-      ParadiseCoin: 50
+      Suntick: 50
   - type: Item
     size: Small
     sprite: _Paradise/paradise_uplink.rsi
@@ -25,14 +25,14 @@
   components:
   - type: Store
     balance:
-      ParadiseCoin: 80
+      Suntick: 80
 
 - type: entity
   parent: ProjectParadiseUplink50
-  id: ProjectParadise100
+  id: ProjectParadiseUplink100
   categories: [ HideSpawnMenu ]
   suffix: 100
   components:
   - type: Store
     balance:
-      ParadiseCoin: 100
+      Suntick: 100

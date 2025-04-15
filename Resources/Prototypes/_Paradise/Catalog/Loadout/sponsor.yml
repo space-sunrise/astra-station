@@ -1,29 +1,29 @@
 - type: sponsorLoadout
-  id: LustSponsorTier1
-  equipment: LustSponsorTier1
+  id: ParadiseSponsorTier1
+  equipment: ParadiseSponsorTier1
 
 - type: startingGear
-  id: LustSponsorTier1
+  id: ParadiseSponsorTier1
   storage:
     back:
-    - LustStationUplink40
+    - ProjectParadiseUplink50
 
 - type: sponsorLoadout
-  id: LustSponsorTier2
-  equipment: LustSponsorTier2
+  id: ParadiseSponsorTier2
+  equipment: ParadiseSponsorTier2
 
 - type: startingGear
-  id: LustSponsorTier2
+  id: ParadiseSponsorTier2
   storage:
     back:
-    - LustStationUplink70
+    - ProjectParadiseUplink80
 
 - type: sponsorLoadout
-  id: LustSponsorTier3
-  equipment: LustSponsorTier3
+  id: ParadiseSponsorTier3
+  equipment: ParadiseSponsorTier3
 
 - type: startingGear
-  id: LustSponsorTier3
+  id: ParadiseSponsorTier3
   storage:
     back:
-    - LustStationUplink90
+    - ProjectParadiseUplink100
