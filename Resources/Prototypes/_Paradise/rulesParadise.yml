@@ -1,0 +1,149 @@
+- type: guideEntry
+  id: ParadiseRuleset
+  name: guide-entry-rules
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/ParadiseRules.xml"
+
+- type: guideEntry
+  id: RuleParadise0
+  name: guide-entry-lust-rule-0
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/RuleParadise0.xml"
+
+- type: guideEntry
+  id: RuleParadise1
+  name: guide-entry-lust-rule-1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/RuleParadise1.xml"
+
+- type: guideEntry
+  id: RuleParadise11
+  name: guide-entry-lust-rule-1-1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise11.xml"
+
+- type: guideEntry
+  id: RuleParadise12
+  name: guide-entry-lust-rule-1-2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise12.xml"
+
+- type: guideEntry
+  id: RuleParadise13
+  name: guide-entry-lust-rule-1-3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise13.xml"
+
+- type: guideEntry
+  id: RuleParadise14
+  name: guide-entry-lust-rule-1-4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise14.xml"
+
+- type: guideEntry
+  id: RuleParadise15
+  name: guide-entry-lust-rule-1-5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise15.xml"
+
+- type: guideEntry
+  id: RuleParadise2
+  name: guide-entry-lust-rule-2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/RuleParadise2.xml"
+
+- type: guideEntry
+  id: RuleParadise21
+  name: guide-entry-lust-rule-2-1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise21.xml"
+
+- type: guideEntry
+  id: RuleParadise22
+  name: guide-entry-lust-rule-2-2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise22.xml"
+
+- type: guideEntry
+  id: RuleParadise23
+  name: guide-entry-lust-rule-2-3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise23.xml"
+
+- type: guideEntry
+  id: RuleParadise24
+  name: guide-entry-lust-rule-2-4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise24.xml"
+
+- type: guideEntry
+  id: RuleParadise25
+  name: guide-entry-lust-rule-2-5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise25.xml"
+
+- type: guideEntry
+  id: RuleParadise3
+  name: guide-entry-lust-rule-3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/RuleParadise3.xml"
+
+- type: guideEntry
+  id: RuleParadise31
+  name: guide-entry-lust-rule-3-1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise31.xml"
+
+- type: guideEntry
+  id: RuleParadise32
+  name: guide-entry-lust-rule-3-2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise32.xml"
+
+- type: guideEntry
+  id: RuleParadise33
+  name: guide-entry-lust-rule-3-3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise33.xml"
+
+- type: guideEntry
+  id: RuleParadise4
+  name: guide-entry-lust-rule-4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/RuleParadise4.xml"
+
+- type: guideEntry
+  id: RuleParadise41
+  name: guide-entry-lust-rule-4-1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise41.xml"
+
+- type: guideEntry
+  id: RuleParadise42
+  name: guide-entry-lust-rule-4-2
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise42.xml"
+
+- type: guideEntry
+  id: RuleParadise43
+  name: guide-entry-lust-rule-4-3
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise43.xml"
+
+- type: guideEntry
+  id: RuleParadise44
+  name: guide-entry-lust-rule-4-4
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise44.xml"
+
+- type: guideEntry
+  id: RuleParadise441
+  name: guide-entry-lust-rule-4-4-1
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise441.xml"
+
+- type: guideEntry
+  id: RuleParadise45
+  name: guide-entry-lust-rule-4-5
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/ServerRules/RulesParadise/Subrules/RuleParadise45.xml"
