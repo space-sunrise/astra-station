@@ -681,3 +681,7 @@ ScienceTechFab: null
 ReverseEngineeringMachine: null
 ScienceTechFabCircuitboard: null
 EngineeringTechFabCircuitboard: null
+
+# PROJECT PARADISE
+VendingMachineCoffeeMigrateUnderwear: VendingMachineUnderwear
+VendingMachineDonutMigrateKinko: VendingMachineKink
