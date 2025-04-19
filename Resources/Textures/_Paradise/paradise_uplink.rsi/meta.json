@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Created by Sunrise",
+  "copyright": "Created by SShved",
   "size": {
     "x": 32,
     "y": 32
@@ -22,6 +22,7 @@
               0.2,
               0.2,
               0.2,
+              1.5,
               0.2,
               0.2,
               0.2,
