@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseSecurityPDA
+  id: ProsecutorPDA
+  name: prosecutor's PDA
+  description: The OS appears to have been jailbroken. Again.
+  components:
+  - type: Sprite
+    sprite: _Paradise/Objects/Devices/pda.rsi
+  - type: Pda
+    id: ProsecutorIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-prosecutor
+  - type: Icon
+    sprite: _Paradise/Objects/Devices/pda.rsi
+    state: pda-prosecutor

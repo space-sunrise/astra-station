@@ -1,0 +1,12 @@
+- type: entity
+  parent: IDCardStandard
+  id: ProsecutorIDCard
+  name: prosecutor ID card
+  components:
+  - type: Sprite
+    sprite: _Paradise/Objects/Misc/id_cards.rsi
+    layers:
+    - state: silver
+    - state: idprosecutor
+  - type: PresetIdCard
+    job: Prosecutor

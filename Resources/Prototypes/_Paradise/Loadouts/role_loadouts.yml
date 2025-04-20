@@ -1,0 +1,13 @@
+- type: roleLoadout
+  id: JobProsecutor
+  groups:
+  - ProsecutorCapGear
+  - ProsecutorOuterClothing
+  - SurvivalSecurity
+  - Trinkets
+  - SecurityTrinkets
+  - CorporateLaw
+  - GroupSpeciesBreathTool
+  - Bra
+  - Pants
+  - Socks

@@ -1,0 +1,13 @@
+- type: entity
+  name: prosecutor's rubber stamp
+  parent: RubberStampBase
+  id: RubberStampProsecutor
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: Следователь
+    stampedColor: "#232e3d"
+    stampState: "paper_stamp-greytide"
+  - type: Sprite
+    sprite: _Paradise/Objects/Misc/stamps.rsi
+    state: stamp-prosecutor

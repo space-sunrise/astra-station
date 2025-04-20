@@ -1,0 +1,16 @@
+- type: entity
+  parent: [ClothingOuterArmorBasic, ClothingOuterStorageBase, BaseSecurityContraband]
+  id: ClothingOuterCoatProsecutorOvercoat
+  name: prosecutor's overcoat
+  description: Lightly armored overcoat meant as mandatory wear for prosecutor officers.
+  components:
+  - type: Sprite
+    sprite: _Paradise/Clothing/OuterClothing/Coats/prosecutor_coat.rsi
+  - type: Clothing
+    sprite: _Paradise/Clothing/OuterClothing/Coats/prosecutor_coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.6

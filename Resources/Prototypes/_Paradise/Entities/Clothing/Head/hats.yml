@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCapProsecutor
+  name: prosecutor's officer cap
+  description: A cap worn by prosecutors. Kept you waiting, huh?
+  components:
+  - type: Sprite
+    sprite: _Paradise/Clothing/Head/Hats/prosecutor_cap.rsi
+  - type: Clothing
+    sprite: _Paradise/Clothing/Head/Hats/prosecutor_cap.rsi
