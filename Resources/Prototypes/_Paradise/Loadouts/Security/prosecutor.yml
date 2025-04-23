@@ -1,0 +1,10 @@
+- type: loadout # Paradise
+  id: ProsecutorCap
+  equipment:
+    head: ClothingHeadCapProsecutor
+
+
+- type: loadout # Paradise
+  id: ProsecutorCoat
+  equipment:
+    outerClothing: ClothingOuterCoatProsecutorOvercoat

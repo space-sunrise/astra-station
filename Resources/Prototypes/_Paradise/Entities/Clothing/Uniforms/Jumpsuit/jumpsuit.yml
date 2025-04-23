@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ProsecutorUniformSuit
+  name: prosecutor's uniform
+  description: Objection!
+  components:
+  - type: Sprite
+    sprite: _Paradise/Clothing/Uniforms/Jumpsuit/prosecutor_suit.rsi
+  - type: Clothing
+    sprite: _Paradise/Clothing/Uniforms/Jumpsuit/prosecutor_suit.rsi

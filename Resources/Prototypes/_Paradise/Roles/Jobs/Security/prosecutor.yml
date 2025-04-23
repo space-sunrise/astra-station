@@ -1,0 +1,53 @@
+- type: job
+  id: Prosecutor
+  name: job-name-prosecutor
+  description: job-description-prosecutor
+  playTimeTracker: JobProsecutor
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Law
+    time: 36000
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 36000
+  - !type:DiscordRoleRequirement
+  startingGear: ProsecutorGear
+  icon: "JobIconProsecutor"
+  supervisors: job-supervisors-magistrate
+  canBeAntag: false
+  setPreference: false
+  overrideConsoleVisibility: true
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - External
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  speciesBlacklist:
+  - Vox
+
+- type: startingGear
+  id: ProsecutorGear
+  equipment:
+    jumpsuit: ProsecutorUniformSuit
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesHop
+    id: ProsecutorPDA
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltLeatherHolsterFilled
+    pocket1: Flash
+    pocket2: Telebaton
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconProsecutor
+  icon:
+    sprite: /Textures/_Paradise/Interface/Misc/job_icons.rsi
+    state: Prosecutor

@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltLeatherHolster
+  name: leather holster
+  description: Yep, 100% leather
+  components:
+  - type: Sprite
+    sprite: _Paradise/Clothing/Belt/leather_holster.rsi
+  - type: Clothing
+    sprite: _Paradise/Clothing/Belt/leather_holster.rsi
+  - type: Storage
+    grid:
+    - 0,0,4,1
+
+- type: entity
+  parent: ClothingBeltLeatherHolster
+  id: ClothingBeltLeatherHolsterFilled
+  components:
+  - type: StorageFill
+    contents:
+    - id: RubberStampProsecutor
+    - id: HandheldCriminalRecordsMonitor

@@ -1,0 +1,1 @@
+Prosecutor-loadout = Снаряжение следователя

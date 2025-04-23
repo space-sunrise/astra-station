@@ -1,0 +1,11 @@
+- type: loadoutGroup
+  id: ProsecutorOuterClothing
+  name: loadout-group-prosecutor-outerclothing
+  loadouts:
+  - ProsecutorCoat
+
+- type: loadoutGroup
+  id: ProsecutorCapGear
+  name: loadout-group-prosecutor-cap-gear
+  loadouts:
+  - ProsecutorCap
