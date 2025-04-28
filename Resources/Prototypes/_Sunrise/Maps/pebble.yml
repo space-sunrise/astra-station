@@ -49,3 +49,6 @@
             SeniorPhysician: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
+            # Paradise-Start
+            Prosecutor: [ 1, 1 ]
+            # Paradise-End
