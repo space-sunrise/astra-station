@@ -55,6 +55,10 @@
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
       state: alive-unshaded
       shader: unshaded
+  # Sunrise-Start
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  # Sunrise-End
   - type: Appearance
   - type: DamageStateVisuals
     states:
@@ -159,6 +163,12 @@
     - NamesDragon
     - NamesDragonTitle
     nameFormat: name-format-dragon
+  - type: Prying
+    pryPowered: true
+    force: true
+    speedModifier: 2.5 # fast because dragon strong
+    useSound:
+      path: /Audio/Items/crowbar.ogg
   # Sunrise-Start
   - type: CollectiveMind
     minds:
