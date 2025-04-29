@@ -41,6 +41,9 @@
             SeniorOfficer: [ 1, 1 ]
             Adjutant: [ 1, 1 ]
             Lawyer: [ 1, 1 ]
+            # Paradise-Start
+            Prosecutor: [ 1, 1 ]
+            # Paradise-End
         - type: StationGoal
           goals:
           - Shuttle

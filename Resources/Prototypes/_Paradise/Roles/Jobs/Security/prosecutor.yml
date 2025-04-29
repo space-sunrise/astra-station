@@ -5,18 +5,15 @@
   playTimeTracker: JobProsecutor
   requirements:
   - !type:DepartmentTimeRequirement
-    department: Law
-    time: 36000
-  - !type:DepartmentTimeRequirement
     department: Security
-    time: 36000
-  - !type:DiscordRoleRequirement
+    time: 43200
   startingGear: ProsecutorGear
   icon: "JobIconProsecutor"
   supervisors: job-supervisors-magistrate
   canBeAntag: false
-  setPreference: false
-  overrideConsoleVisibility: true
+  displayWeight: 65
+  setPreference: true
+  #overrideConsoleVisibility: true
   access:
   - Security
   - Brig

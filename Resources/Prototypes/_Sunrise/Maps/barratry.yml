@@ -92,6 +92,9 @@
             PeaceBorg: [ 2, 2 ]
             MedicalBorg: [ 4, 4 ]
             SecurityBorg: [ 4, 4 ]
+            # Paradise-Start
+            Prosecutor: [ 1, 1 ]
+            # Paradise-End
         - type: StationGoal
           goals:
           - Shuttle

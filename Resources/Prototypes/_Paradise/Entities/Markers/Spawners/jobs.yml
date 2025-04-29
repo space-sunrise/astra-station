@@ -1,0 +1,12 @@
+- type: entity
+  id: SpawnPointProsecutor
+  parent: SpawnPointJobBase
+  name: prosecutor
+  components:
+  - type: SpawnPoint
+    job_id: Prosecutor
+  - type: Sprite
+    sprite: _Paradise/Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: prosecutor
