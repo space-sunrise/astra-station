@@ -1,15 +1,15 @@
 {
     "version": 1,
-    "size": {
-    "x": 32,
-        "y": 32
-},
-    "copyright": "Tejrra for Project Paradise",
     "license": "CC-BY-SA-3.0",
+    "copyright": "Provided by @tejrra for Project Paradise",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
     "states": [
-    {
-        "name": "Arcane",
-        "directions": 4
-    }
-  ]
+        {
+            "name": "arcane",
+            "directions": 4
+        }
+    ]
 }
