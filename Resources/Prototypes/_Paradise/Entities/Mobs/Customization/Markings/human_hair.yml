@@ -1,0 +1,7 @@
+- type: marking
+  id: HumanHairArcane
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Paradise/Mobs/Customization/human_hair.rsi
+    state: arcane
