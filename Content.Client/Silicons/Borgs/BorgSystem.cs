@@ -67,19 +67,16 @@ public sealed class BorgSystem : SharedBorgSystem
                 _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.Wrecked, true);
                 return;
             }
-            if (state == MobState.Alive)
+
+            if (ability.IsResting)
             {
-                if (ability.IsResting)
-                {
-                    sprite.LayerSetVisible(RestVisuals.Resting, true);
-                    sprite.LayerSetVisible(BorgVisualLayers.LightStatus, false);
-                }
-                sprite.LayerSetVisible(BorgVisualLayers.Wrecked, false);
+                _sprite.LayerSetVisible((uid, sprite), RestVisuals.Resting, true);
+                _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.LightStatus, false);
             }
+            _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.Wrecked, false);
         }
         if (!_appearance.TryGetData<bool>(uid, BorgVisuals.HasPlayer, out var hasPlayer, appearance))
             hasPlayer = false;
-
         if (ability.IsResting)
         {
             _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.LightStatus, false);
@@ -88,7 +85,7 @@ public sealed class BorgSystem : SharedBorgSystem
         else
         {
             _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.Light, component.BrainEntity != null || hasPlayer);
-            _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.Light, hasPlayer ? component.HasMindState : component.NoMindState);
+            _sprite.LayerSetRsiState((uid, sprite), BorgVisualLayers.Light, hasPlayer ? component.HasMindState : component.NoMindState);
             _sprite.LayerSetVisible((uid, sprite), BorgVisualLayers.Body, true);
             _sprite.LayerSetVisible((uid, sprite), RestVisuals.Resting, false);
         }
