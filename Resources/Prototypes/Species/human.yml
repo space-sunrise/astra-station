@@ -9,6 +9,7 @@
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
   skinColoration: HumanToned
+  buttScanTexture: /Textures/_Sunrise/ButtsScans/human.png # Sunrise-Edit
   sexes: [Male, Female, Futanari] # Lust-edit
 
 # The lack of a layer means that
@@ -46,6 +47,7 @@
   - Male
   - Futanari
   sprites:
+    Special: MobHumanoidAnyMarking
     Head: MobHumanSlimHead
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
@@ -81,10 +83,10 @@
       points: 1 # Sunrise-Sponsors
       required: false
     HeadTop:
-      points: 1 # Sunrise-Sponsors
+      points: 1
       required: false
     Chest:
-      points: 1
+      points: 2
       required: false
     Legs:
       points: 2

@@ -61,7 +61,11 @@
         reagents:
         - ReagentId: Cellulose
           Quantity: 3
-
+  # Sunrise-Start
+  - type: Tag
+    tags:
+    - SheetPaper
+  # Sunrise-End
 
 - type: entity
   parent: SheetPaper
@@ -145,7 +149,7 @@
     count: 0
 
 - type: entity
-  parent: SheetOtherBase
+  parent: [PlasticSounds, SheetOtherBase] # Sunrise edit
   id: SheetPlastic
   name: plastic
   suffix: Full

@@ -9,6 +9,7 @@
     - id: CargoSaleComputerCircuitboard
     - id: CargoShuttleConsoleCircuitboard
     - id: SalvageMagnetMachineCircuitboard
+    - id: SalvageJobBoardComputerCircuitboard
     - id: CigPackGreen
       prob: 0.50
     - id: ClothingHeadsetAltCargo
@@ -17,6 +18,7 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: AstroNavCartridge
+    - id: ClothingHandsKnuckleDustersQM
     - id: MailTeleporterMachineCircuitboard
     # Sunrise-start: Flippos + Cargo suit
     - id: ClothingOuterSuitCargo
@@ -59,6 +61,10 @@
     - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
     - id: FlippoLighterSunriseCap  # Sunrise-Flippo
+    - id: HeadSkeleton # A skull to accompany your skeleton crew
+      conditions:
+      - !type:PlayerCountCondition
+        max: 15
 
 # No laser table + Laser table
 - type: entityTable
@@ -174,6 +180,7 @@
     - id: RCDAdvancedSunrise # Sunrise-RCD
     - id: RCDAmmo
     - id: RubberStampCE
+    - id: MetalFoamGrenade
     - id: FlippoLighterSunriseCe  # Sunrise-Flippo
 
 # Hardsuit table, used for suit storage as well
@@ -221,7 +228,7 @@
     - id: BoxEncryptionKeyMedical
     - id: ClothingBackpackDuffelSurgeryFilled
     - id: ClothingCloakCmo
-#    - id: ClothingEyesHudMedical # Sunrise-edit
+    #    - id: ClothingEyesHudMedical # Sunrise-edit
     - id: ClothingHandsGlovesNitrile
     - id: ClothingHeadHatBeretCmo
     - id: ClothingHeadsetAltMedical
@@ -232,12 +239,6 @@
     #Sunrise-start
     - id: ClothingEyesUniversalMedicalHud
     - id: AdvancedDefibrillator
-    - id: LauncherSyringeMed
-      prob: 0.6
-    - id: BoxMiniSyringe
-      prob: 0.8
-    - id: BoxMiniSyringe
-      prob: 0.20
     - id: VariantCubeBoxSunrise
     #Sunrise-end
     - id: MedicalTechFabCircuitboard
@@ -409,7 +410,6 @@
   - type: StorageFill
     contents:
     - id: WeaponRevolverDeckard
-    - id: ClothingOuterHardsuitBasic
     - id: JetpackBlue
     - id: SpaceCash1000
     - id: BeachBall

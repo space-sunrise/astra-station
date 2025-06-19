@@ -9,6 +9,7 @@
   markingLimits: MobHumanoidXenoMarkingLimits
   dollPrototype: MobXenoDummy
   skinColoration: TintedHues
+  buttScanTexture: /Textures/_Sunrise/ButtsScans/human.png
   sponsorOnly: false # Lust-edit
 
 - type: bodyType

@@ -12,11 +12,15 @@
   youngAge: 23
   oldAge: 25
   maxAge: 27
+  buttScanTexture: /Textures/_Sunrise/ButtsScans/human.png
   sexes: [Male, Female, Futanari] # Lust-edit
 
 - type: markingPoints
   id: MobFelinidMarkingLimits
   points:
+    Special: # the cat ear joke
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false

@@ -10,15 +10,16 @@
     - Lawyer
     - NtrOfficer
 
-- type: department # Surnise-Blueshield
-  id: Blueshield
-  name: department-Blueshield
-  description: department-Blueshield-description
-  color: "#005bfb"  # Иначе плохо видно
-  roles:
-    - BlueShield
-  primary: false
-  weight: 50
+#- type: department # Surnise-Blueshield
+#  id: BlueShield
+#  name: department-Blueshield
+#  description: department-Blueshield-description
+#  color: "#0f4e81"
+#  roles:
+#    - BlueShieldEnsign
+#    - BlueShieldOfficer
+#  primary: false
+#  weight: 50
 
 - type: department
   id: PlanetPrison
@@ -28,10 +29,35 @@
   color: "#9f4000"
   roles:
   - HeadOfPrison
-  - PrisonPilot
   - PrisonWorker
   - PrisonChef
   - PrisonDoctor
   - PrisonEngineer
   - PrisonGuard
   - PlanetPrisoner
+
+- type: department
+  id: CentralCommand
+  name: department-CentralCommand
+  description: department-CentralCommand-description
+  color: "#0d4f1d"
+  roles:
+  - CentCommOperator
+  - CentCommOfficial
+  weight: 120
+
+- type: department
+  id: SpecialOperations
+  name: department-SpecialOperations
+  description: department-SpecialOperations-description
+  color: "#0c344d"
+  roles:
+  - CBURN
+  - ERTLeader
+  - ERTChaplain
+  - ERTJanitor
+  - ERTMedical
+  - ERTSecurity
+  - ERTEngineer
+  - DeathSquad
+  editorHidden: true

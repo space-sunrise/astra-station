@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using Content.Server.Administration.Managers;
@@ -8,6 +9,7 @@ using Content.Server.Connection.IPIntel;
 using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
+using Content.Shared._Sunrise.SunriseCCVars;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Players.PlayTimeTracking;
@@ -65,7 +67,11 @@ namespace Content.Server.Connection
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
+        [Dependency] private readonly IEntityManager _entityManager = default!;
+
+        private GameTicker? _ticker;
         private ISharedSponsorsManager? _sponsorsMgr; // Sunrise-Sponsors
+        private List<IPAddress?> _ipWhitelist = []; // Sunrise-Edit
 
         private ISawmill _sawmill = default!;
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];
@@ -88,7 +94,33 @@ namespace Content.Server.Connection
             _plyMgr.PlayerStatusChanged += PlayerStatusChanged;
             // Approval-based IP bans disabled because they don't play well with Happy Eyeballs.
             // _netMgr.HandleApprovalCallback = HandleApproval;
+
+            _cfg.OnValueChanged(SunriseCCVars.IpWhitelist, OnIpWhitelistChanged, true); // Sunrise-Edit
         }
+
+        // Sunrise-Start
+        private void OnIpWhitelistChanged(string serverList)
+        {
+            var ips = new List<IPAddress?>();
+
+            foreach (var addr in serverList.Split(','))
+            {
+                try
+                {
+                    // Parse the string into an IPAddress
+                    var ipAddress = IPAddress.Parse(addr.Trim());
+                    ips.Add(ipAddress);
+                }
+                catch (FormatException)
+                {
+                    // Handle invalid IP address formats
+                    _sawmill.Warning($"Invalid IP address format: {addr}");
+                }
+            }
+
+            _ipWhitelist = ips;
+        }
+        // Sunrise-End
 
         public void AddTemporaryConnectBypass(NetUserId user, TimeSpan duration)
         {
@@ -230,6 +262,11 @@ namespace Content.Server.Connection
                 return (ConnectionDenyReason.NoHwid, Loc.GetString("hwid-required"), null);
             }
 
+            // Sunrise-Start
+            if (_ipWhitelist.Contains(addr))
+                addr = null;
+            // Sunrise-End
+
             var bans = await _db.GetServerBansAsync(addr, userId, hwId, modernHwid, includeUnbanned: false);
             if (bans.Count > 0)
             {
@@ -296,8 +333,9 @@ namespace Content.Server.Connection
                 }
             }
 
-            var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
-                            ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
+            _ticker ??= _entityManager.SystemOrNull<GameTicker>();
+            var wasInGame = _ticker != null &&
+                            _ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
             var adminBypass = _cfg.GetCVar(CCVars.AdminBypassMaxPlayers) && adminData != null;
             var isQueueEnabled = IoCManager.Instance!.TryResolveType<IServerJoinQueueManager>(out var mgr) && mgr.IsEnabled; // Sunrise-Queue-Edit

@@ -14,6 +14,7 @@
   naming: First
   sexes:
   - Unsexed
+  buttScanTexture: /Textures/_Sunrise/ButtsScans/vox.png # Sunrise-Edit
 
 - type: bodyType
   id: VoxNormal
@@ -61,7 +62,7 @@
       required: true
       defaultMarkings: [ VoxLLegScales, VoxRLegScales, VoxRFootScales, VoxLFootScales ]
     Chest:
-      points: 1
+      points: 2
       required: false
     Tail:
       points: 1

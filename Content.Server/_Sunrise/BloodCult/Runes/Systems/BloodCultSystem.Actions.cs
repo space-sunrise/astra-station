@@ -10,6 +10,7 @@ using Content.Shared._Sunrise.BloodCult.Actions;
 using Content.Shared._Sunrise.BloodCult.Components;
 using Content.Shared._Sunrise.BloodCult.Items;
 using Content.Shared.Actions;
+using Content.Shared.Actions.Components;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Destructible.Thresholds;
 using Content.Shared.DoAfter;
@@ -209,7 +210,7 @@ namespace Content.Server._Sunrise.BloodCult.Runes.Systems
                 // SUNRISE-TODO: Чет говно какое-то, надо переделать.
                 var entityPrototypeId = MetaData(userAction).EntityPrototype?.ID;
                 if (entityPrototypeId == TeleportActionPrototypeId.Id)
-                    _actionsSystem.RemoveAction(uid, userAction, actionsComponent);
+                    _actionsSystem.RemoveAction(uid, userAction);
             }
         }
 
@@ -222,7 +223,7 @@ namespace Content.Server._Sunrise.BloodCult.Runes.Systems
                 // SUNRISE-TODO: Чет говно какое-то, надо переделать.
                 var entityPrototypeId = MetaData(userAction).EntityPrototype?.ID;
                 if (entityPrototypeId == TwistedConstructionActionPrototypeId.Id)
-                    _actionsSystem.RemoveAction(uid, userAction, actionsComponent);
+                    _actionsSystem.RemoveAction((uid, null), userAction);
             }
         }
 
@@ -303,7 +304,7 @@ namespace Content.Server._Sunrise.BloodCult.Runes.Systems
             var armor = Spawn(ArmorPrototypeId, coordinates);
             var shoes = Spawn(ShoesPrototypeId, coordinates);
             var bola = Spawn(BolaPrototypeId, coordinates);
-            var blade = Spawn(cultPrototype.CultBladeProto, coordinates);
+            var blade = Spawn(cultPrototype.BladeProto, coordinates);
 
             _inventorySystem.TryUnequip(args.Target, "head");
             _inventorySystem.TryUnequip(args.Target, "outerClothing");
@@ -497,7 +498,7 @@ namespace Content.Server._Sunrise.BloodCult.Runes.Systems
                 return;
 
             var xform = Transform(args.Performer).Coordinates;
-            var dagger = _entityManager.SpawnEntity(cultPrototype.RitualDaggerProto, xform);
+            var dagger = _entityManager.SpawnEntity(cultPrototype.DaggerProto, xform);
 
             _bloodstreamSystem.TryModifyBloodLevel(args.Performer, -30, bloodstreamComponent);
             _handsSystem.TryPickupAnyHand(args.Performer, dagger);

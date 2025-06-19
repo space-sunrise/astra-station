@@ -3,18 +3,24 @@
   id: EnergyDomeGeneratorBackpackSyndieBiocode
   suffix: BIOCODE
   components:
-  - type: FactionClothingBlocker
+  - type: Biocode
     factions:
     - Syndicate
+  - type: FactionClothingBlocker
+  - type: StaticPrice
+    price: 3000
 
 - type: entity
   parent: EnergyDomeGeneratorPersonalSyndie
   id: EnergyDomeGeneratorPersonalSyndieBiocode
   suffix: BIOCODE
   components:
-  - type: FactionClothingBlocker
+  - type: Biocode
     factions:
     - Syndicate
+  - type: FactionClothingBlocker
+  - type: StaticPrice
+    price: 4000
 
 - type: entity
   parent: EnergyShield
@@ -24,3 +30,5 @@
   - type: Biocode
     factions:
     - Syndicate
+  - type: StaticPrice
+    price: 900

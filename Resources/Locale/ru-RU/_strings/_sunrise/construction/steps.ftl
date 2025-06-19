@@ -16,7 +16,6 @@ step-wallmount-generator-circuit-board-name = микросхему настен�
 step-freezer-electronics-name = микросхему морозильника
 step-multitool-name = мультитул
 step-capacitor-name = конденсатор
-step-powercage-name = любую энерго ячейку
 step-powercell-name = любую батарею
 step-powercell-small-name = маленькую батарею
 step-signal-trigger-name = сигнальный триггер
@@ -58,7 +57,3 @@ step-exosuit-air-tank-name = воздушный баллон экзокостю�
 step-exosuit-thruster-name = ускоритель экзокостюма
 step-ripley-peripherals-control-module-name = модуль управления периферией Рипли
 step-ripley-central-control-module-name = центральный модуль управления Рипли
-
-### PowerCage steps
-step-powercage-smallbattery1 = первая маленькая батарея
-step-powercage-smallbattery2 = вторая маленькая батарея

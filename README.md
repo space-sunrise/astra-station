@@ -15,6 +15,7 @@
 [![Steam](https://img.shields.io/badge/Steam-SS14%20SUNRISE-blue)](https://store.steampowered.com/app/1255460/Space_Station_14/)
 [![Client](https://img.shields.io/badge/Client-Download-blue)](https://spacestation14.io/about/nightlies/)
 [![GitHub](https://img.shields.io/github/stars/space-sunrise/space-station-14?style=social)](https://github.com/space-sunrise/space-station-14)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/space-sunrise/sunrise-station?utm_source=oss&utm_medium=github&utm_campaign=space-sunrise%2Fsunrise-station&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
 # Space Station 14 - SUNRISE
 
@@ -26,6 +27,7 @@
 
 Space Station 14 — это ролевая игра, вдохновлённая культовой классикой Space Station 13. Space Station 14 наполнена весельем и хаосом. С первого взгляда игра кажется сложной, и это так, но мы поможем тебе освоиться в этой игре и найти своё место. Игра работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
+
 ## Документация
 
 На официальном [сайте с документацией](https://docs.spacestation14.io/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом. Также представлено множество полезных материалов для начинающих разработчиков.
@@ -34,7 +36,7 @@ Space Station 14 — это ролевая игра, вдохновлённая 
 <!---
 ТУТ ИЗМЕНИТЬ НА СВОЁ АПИ С САЙТА repobeats.axiom.co  СЕЙЧАС ЭТО СТАТИСТИКА МОЕГО РЕПОЗИТОРИЯ!!!!!!!!!!!!!!!!!!!!
 --->
-![Alt](https://repobeats.axiom.co/api/embed/49651d1b93eecc08e01f1a268a917343cf661fc8.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/64abb657f27748e21cc7bb35ccf7c84486542597.svg "Repobeats analytics image")
 
 ## Участники проекта
 
