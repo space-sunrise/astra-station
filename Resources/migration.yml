@@ -684,7 +684,7 @@ BarSignSpacebucksAlignTile: BarSignSpacebucks
 BarSignMaltroachAlignTile: BarSignMaltroach
 BarSignWhiskeyEchoesAlignTile: BarSignWhiskeyEchoes
 
-# Sunrise migrations
+# Sunrise-Start
 AirlockExternalGlassShuttleArrivals: AirlockExternalGlassShuttleArrivalsLocked
 AirlockHatchSyndicate: AirlockHatchSyndicateLocked
 SurveillanceCameraWirelessRouterBase: SurveillanceCameraWirelessRouterConstructed
@@ -776,9 +776,8 @@ TableWoodReinforced: null
 BoxMiniSyringe: null
 LauncherSyringeMed: null
 PlushieUunaMiira: null
-AbductorDispencer: VendingMachineAbductorDispenser # Abductor shit.
-
-# Кто удалил и не добавил в миграции
+AbductorDispencer: VendingMachineAbductorDispenser
+SpawnMechRipley: SpawnMechHauler
 PrintedDocumentClosingIndictment: null
 PrintedDocumentPermissionDisposeBody: null
 PrintedDocumentDeathCertificate: null
@@ -791,20 +790,24 @@ MagazineFamas: null
 BaseUplinkNTERT75BC: null
 BaseUplinkNTERT100BC: null
 BaseUplinkNTERT200BC: null
-# AtmosDeviceFanTiny: null #Fish-edit
-# AtmosDeviceFanDirectional: null #Fish-edit
+SupermatterSliver: null
+# Удалить только когда все карты будут обновлены под их удаление
+#AtmosDeviceFanTiny: null
+#AtmosDeviceFanDirectional: null
 # Sunrise-End
 
 #Fish-start
 MechSecPod: null
 SpawnMechSecPodFilled: null
 #Fish-end
-# Lust migrations
+
+# Lust-Start
 VendingMachineCoffeeMigrateUnderwear: VendingMachineUnderwear
 VendingMachineDonutMigrateKinko: VendingMachineKink
-# SignNanotrasen1: null
-# SignNanotrasen2: SignQillu1
-# SignNanotrasen3: SignQillu2
-# SignNanotrasen4: SignQillu3
-# SignNanotrasen5: null
-# toyhandcuff: ToyHandcuffs
+SignNanotrasen1: null
+SignNanotrasen2: SignQillu1
+SignNanotrasen3: SignQillu2
+SignNanotrasen4: SignQillu3
+SignNanotrasen5: null
+toyhandcuff: ToyHandcuffs
+# Lust-End

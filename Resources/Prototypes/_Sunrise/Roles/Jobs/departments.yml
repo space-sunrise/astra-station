@@ -27,10 +27,8 @@
 #    - BlueShieldEnsign
 #    - BlueShieldOfficer
 #    - BlueShieldOperative
-#   primary: false
-#   weight: 50
-#   primary: false
-#   weight: 50
+#  primary: false
+#  weight: 50
 
 - type: department
   id: PlanetPrison
