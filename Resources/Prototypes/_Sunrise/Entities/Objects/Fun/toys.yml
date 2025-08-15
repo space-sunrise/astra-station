@@ -1203,7 +1203,6 @@
   - type: Sprite
     sprite: _Sunrise/Objects/Fun/toys.rsi
     state: Olegchmol
-      collection: VulpkaninBarks
   - type: EmitSoundOnUse
     sound:
       collection: PlushieVulpkaninGrowls

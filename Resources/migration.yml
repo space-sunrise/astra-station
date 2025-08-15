@@ -827,15 +827,16 @@ MagazineBoxRifle: MagazineBoxRifleSP
 #Fish-start
 MechSecPod: null
 SpawnMechSecPodFilled: null
+LockerBlueShieldEnsignFilled: LockerBlueShieldOfficerFilled
 #Fish-end
 
-# Lust-Start
+# Astra-start
 VendingMachineCoffeeMigrateUnderwear: VendingMachineUnderwear
 VendingMachineDonutMigrateKinko: VendingMachineKink
 SignNanotrasen1: null
-SignNanotrasen2: SignQillu1
-SignNanotrasen3: SignQillu2
-SignNanotrasen4: SignQillu3
+SignNanotrasen2: null
+SignNanotrasen3: null
+SignNanotrasen4: null
 SignNanotrasen5: null
 toyhandcuff: ToyHandcuffs
-# Lust-End
+# Astra-end

@@ -13,9 +13,8 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mode-disabler
-      shader: unshaded
-      map: [ "Firemode" ]
+    - state: disabler
+      map: ["enum.FireModesLayers.FireMode"]
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
@@ -34,35 +33,31 @@
     autoRechargeRate: 35
     autoRechargePause: true
     autoRechargePauseTime: 20
-  - type: EnergyGunFireModes
+  - type: HitscanBatteryAmmoProvider
+    proto: BulletDisabler
+    fireCost: 50
+  - type: BatteryWeaponFireModes
     fireModes:
-    - hitscanProto: BulletDisabler
+    - proto: BulletDisabler
       fireCost: 50
       name: energy-gun-disable
-      state: disabler
-      shotType: Hitscan
-    - hitscanProto: BulletEnergyGunLaser
+      visualState: disabler
+      heldPrefix: disable
+    - proto: BulletEnergyGunLaser
       fireCost: 100
       name: energy-gun-lethal
-      state: lethal
-      shotType: Hitscan
-    # - projectileProto: BulletEnergyGunIon
+      visualState: lethal
+      heldPrefix: lethal
+    # - proto: BulletEnergyGunIon
     #   fireCost: 250
     #   name: ion
-    #   state: special
-    #  shotType: Projectile
+    #   visualState: special
+    #   heldPrefix: ion
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.EnergyGunFireModeVisuals.State:
-        Firemode:
-          Disabler: { state: mode-disabler }
-          Lethal: { state: mode-lethal }
-          Special: { state: mode-ion }
   - type: Tag
     tags:
     - HighRiskItem

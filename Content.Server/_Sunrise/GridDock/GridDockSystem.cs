@@ -47,7 +47,7 @@ public sealed class GridDockSystem : EntitySystem
         if (rootUid == null)
             return;
 
-        if (!TryComp<ShuttleComponent>(rootUid.Value, out var shuttleComp))
+        if (!TryComp<ShuttleComponent>(rootUid.Value.Owner, out var shuttleComp))
             // Fish-end
             return;
 
@@ -63,7 +63,7 @@ public sealed class GridDockSystem : EntitySystem
         }
 
         _shuttles.FTLToDock(
-            rootUid.Value, // Fish-edit
+            rootUid.Value.Owner, // Fish-edit
             shuttleComp,
             target.Value,
             5f,
@@ -75,7 +75,13 @@ public sealed class GridDockSystem : EntitySystem
     // Fish-start
     private void OnStationPostInitMultiple(EntityUid uid, SpawnAdditionalGridsAndDockToStationComponent component, StationPostInitEvent args)
     {
-        var target = _station.GetLargestGrid(Comp<StationDataComponent>(uid));
+        if (!TryComp<StationDataComponent>(uid, out var stationData))
+        {
+            Log.Error($"GridDockSystem: No StationDataComponent on {ToPrettyString(uid)}. Aborting.");
+            return;
+        }
+        var target = _station.GetLargestGrid((uid, stationData));
+        
         if (target == null)
         {
             Log.Error($"GridDockSystem: No target station grid found for {ToPrettyString(uid)}. Aborting.");
@@ -105,14 +111,14 @@ public sealed class GridDockSystem : EntitySystem
                 continue;
             }
 
-            if (!TryComp<ShuttleComponent>(gridUid.Value, out var shuttleComp))
+            if (!TryComp<ShuttleComponent>(gridUid.Value.Owner, out var shuttleComp))
             {
-                Log.Warning($"Spawned grid {ToPrettyString(gridUid.Value)} from {spawnEntry.GridPath} has no ShuttleComponent. Skipping docking.");
+                Log.Warning($"Spawned grid {ToPrettyString(gridUid.Value.Owner)} from {spawnEntry.GridPath} has no ShuttleComponent. Skipping docking.");
                 continue;
             }
 
             _shuttles.FTLToDock(
-                gridUid.Value,
+                gridUid.Value.Owner,
                 shuttleComp,
                 target.Value,
                 5f,
