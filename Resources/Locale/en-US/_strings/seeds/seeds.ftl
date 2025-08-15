@@ -152,3 +152,5 @@ seeds-mango-name = mango
 seeds-mango-display-name = mango tree
 seeds-oxygenmango-name = oxygen mango
 seeds-oxygenmango-display-name = oxygen mango tree
+seeds-bloonion-name = bloonion
+seeds-bloonion-display-name = bloonion bulbs

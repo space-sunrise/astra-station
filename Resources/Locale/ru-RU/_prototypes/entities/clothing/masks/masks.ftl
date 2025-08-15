@@ -1,7 +1,5 @@
 ent-ClothingMaskGas = противогаз
     .desc = Закрывающая лицо маска, которую можно подключить к дыхательному баллону.
-ent-ClothingMaskGasFaceOpen = gas mask covered
-    .desc = { ent-ClothingMaskGas.desc }
 ent-ClothingMaskGasSecurity = противогаз СБ
     .desc = Стандартный противогаз Службы безопасности.
 ent-ClothingMaskGasSyndicate = противогаз синдиката
@@ -48,7 +46,7 @@ ent-ClothingMaskGasMerc = противогаз наёмника
 ent-ClothingMaskGasERT = противогаз ОБР
     .desc = Противогаз элитного отряда быстрого реагирования.
 ent-ClothingMaskGasDeathSquad = противогаз эскадрона смерти
-    .desc = Уникальный противогаз самого элитного отряда QL.
+    .desc = Уникальный противогаз самого элитного отряда NT.
 ent-ClothingMaskRat = маска крысы
     .desc = Маска крысы, похожая на крысу. Возможно, они примут вас за обычную крысу.
 ent-ClothingMaskFox = маска лисы
