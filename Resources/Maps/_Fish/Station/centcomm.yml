@@ -19081,6 +19081,367 @@ entities:
     - type: Transform
       pos: -18.370527,8.827588
       parent: 2
+- proto: GunSafe
+  entities:
+  - uid: 720
+    components:
+    - type: Transform
+      pos: 1.5,-73.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 721
+          - 722
+          - 730
+          - 723
+          - 725
+          - 726
+          - 727
+          - 729
+          - 728
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2459
+    components:
+    - type: Transform
+      pos: 12.5,32.5
+      parent: 2
+  - uid: 2460
+    components:
+    - type: Transform
+      pos: 13.5,32.5
+      parent: 2
+  - uid: 2461
+    components:
+    - type: Transform
+      pos: 15.5,30.5
+      parent: 2
+  - uid: 2462
+    components:
+    - type: Transform
+      pos: 15.5,32.5
+      parent: 2
+  - uid: 2463
+    components:
+    - type: Transform
+      pos: -2.5,-73.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2464
+          - 2465
+          - 2466
+          - 2467
+          - 2468
+          - 2469
+          - 2470
+          - 2471
+          - 2472
+          - 2473
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2474
+    components:
+    - type: Transform
+      pos: -1.5,-73.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2475
+          - 2476
+          - 2477
+          - 2478
+          - 2479
+          - 2480
+          - 2481
+          - 2482
+          - 2483
+          - 2484
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2485
+    components:
+    - type: Transform
+      pos: -0.5,-73.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2486
+          - 2487
+          - 2488
+          - 2489
+          - 2490
+          - 2491
+          - 2492
+          - 2493
+          - 2494
+          - 2495
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2496
+    components:
+    - type: Transform
+      pos: 0.5,-73.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2497
+          - 2498
+          - 2499
+          - 2500
+          - 2501
+          - 2502
+          - 2503
+          - 2504
+          - 2505
+          - 2506
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2507
+    components:
+    - type: Transform
+      pos: 1.5,-71.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2513
+          - 2512
+          - 2511
+          - 2510
+          - 2509
+          - 2508
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2514
+    components:
+    - type: Transform
+      pos: 1.5,-70.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2515
+          - 2516
+          - 2517
+          - 2518
+          - 2519
+          - 2520
+          - 2521
+          - 2522
+          - 2523
+          - 2524
+          - 2525
+          - 2526
+          - 2527
+          - 2528
+          - 2529
+          - 2530
+          - 2531
+          - 2532
+          - 2533
+          - 2534
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2535
+    components:
+    - type: Transform
+      pos: 0.5,-71.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2536
+          - 2537
+          - 2538
+          - 2539
+          - 2540
+          - 2541
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2542
+    components:
+    - type: Transform
+      pos: -2.5,-71.5
+      parent: 2
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 75
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
+  - uid: 2543
+    components:
+    - type: Transform
+      pos: -1.5,-71.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2544
+          - 2545
+          - 2546
+          - 2547
+          - 2548
+          - 2549
+          - 2550
+          - 2551
+          - 2552
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2553
+    components:
+    - type: Transform
+      pos: 21.5,-52.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2554
+          - 2555
+          - 2556
+          - 2557
+          - 2558
+          - 2559
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2560
+    components:
+    - type: Transform
+      pos: 22.5,-52.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2566
+          - 2565
+          - 2564
+          - 2563
+          - 2562
+          - 2561
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2567
+    components:
+    - type: Transform
+      pos: 4.5,30.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2573
+          - 2572
+          - 2571
+          - 2570
+          - 2569
+          - 2568
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: Handcuffs
   entities:
   - uid: 2574
@@ -29320,6 +29681,148 @@ entities:
     - type: Transform
       pos: -11.5,4.5
       parent: 2
+- proto: SunriseMagazineRifleExtended
+  entities:
+  - uid: 2515
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2516
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2517
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2518
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2519
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2520
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2521
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2522
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2523
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2524
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2525
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2526
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2527
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2528
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2529
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2530
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2531
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2532
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2533
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2534
+    components:
+    - type: Transform
+      parent: 2514
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SurveillanceCameraCommand
   entities:
   - uid: 3887
@@ -37931,122 +38434,56 @@ entities:
     components:
     - type: Transform
       parent: 2567
-    - type: EnergyGunFireModes
-      currentFireMode:
-        state: disabler
-        name: energy-gun-disable
-        shotType: Hitscan
-        fireCost: 90
-        hitscanProto: BulletDisabler
-        projectileProto: null
     - type: Item
       heldPrefix: disabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-    - type: HitscanBatteryAmmoProvider
-      fireCost: 90
-      proto: BulletDisabler
   - uid: 2569
     components:
     - type: Transform
       parent: 2567
-    - type: EnergyGunFireModes
-      currentFireMode:
-        state: disabler
-        name: energy-gun-disable
-        shotType: Hitscan
-        fireCost: 90
-        hitscanProto: BulletDisabler
-        projectileProto: null
     - type: Item
       heldPrefix: disabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-    - type: HitscanBatteryAmmoProvider
-      fireCost: 90
-      proto: BulletDisabler
   - uid: 2570
     components:
     - type: Transform
       parent: 2567
-    - type: EnergyGunFireModes
-      currentFireMode:
-        state: disabler
-        name: energy-gun-disable
-        shotType: Hitscan
-        fireCost: 90
-        hitscanProto: BulletDisabler
-        projectileProto: null
     - type: Item
       heldPrefix: disabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-    - type: HitscanBatteryAmmoProvider
-      fireCost: 90
-      proto: BulletDisabler
   - uid: 2571
     components:
     - type: Transform
       parent: 2567
-    - type: EnergyGunFireModes
-      currentFireMode:
-        state: disabler
-        name: energy-gun-disable
-        shotType: Hitscan
-        fireCost: 90
-        hitscanProto: BulletDisabler
-        projectileProto: null
     - type: Item
       heldPrefix: disabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-    - type: HitscanBatteryAmmoProvider
-      fireCost: 90
-      proto: BulletDisabler
   - uid: 2572
     components:
     - type: Transform
       parent: 2567
-    - type: EnergyGunFireModes
-      currentFireMode:
-        state: disabler
-        name: energy-gun-disable
-        shotType: Hitscan
-        fireCost: 90
-        hitscanProto: BulletDisabler
-        projectileProto: null
     - type: Item
       heldPrefix: disabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-    - type: HitscanBatteryAmmoProvider
-      fireCost: 90
-      proto: BulletDisabler
   - uid: 2573
     components:
     - type: Transform
       parent: 2567
-    - type: EnergyGunFireModes
-      currentFireMode:
-        state: disabler
-        name: energy-gun-disable
-        shotType: Hitscan
-        fireCost: 90
-        hitscanProto: BulletDisabler
-        projectileProto: null
     - type: Item
       heldPrefix: disabler
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-    - type: HitscanBatteryAmmoProvider
-      fireCost: 90
-      proto: BulletDisabler
 - proto: WeaponEnergyTurretAI
   entities:
   - uid: 5424

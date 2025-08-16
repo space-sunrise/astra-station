@@ -830,6 +830,7 @@ PrinterDocFlatpack: CopyMachineFlatpack
 MechSecPod: null
 SpawnMechSecPodFilled: null
 LockerBlueShieldEnsignFilled: LockerBlueShieldOfficerFilled
+SunriseMagazineRifleExtended: null
 #Fish-end
 
 # Astra-start
