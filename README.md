@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Space Station 14" height="128" src="https://i.ibb.co/zV4P12Qg/image-4959.png" />
+  <img alt="Space Station 14" height="256" src="https://i.ibb.co/zV4P12Qg/image-4959.png" />
 </p>
 
 
