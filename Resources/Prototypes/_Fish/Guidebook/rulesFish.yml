@@ -148,3 +148,27 @@
   ruleEntry: true
   priority: 42
   text: "/ServerInfo/Guidebook/ServerRules/RulesFish/SubRules/FishSR42.xml"
+- type: guideEntry
+  id: FishSR91
+  name: guide-entry-fish-rule-9-1
+  ruleEntry: true
+  priority: 91
+  text: "/ServerInfo/Guidebook/ServerRules/RulesFish/SubRules/FishSR91.xml"
+- type: guideEntry
+  id: FishSR92
+  name: guide-entry-fish-rule-9-2
+  ruleEntry: true
+  priority: 92
+  text: "/ServerInfo/Guidebook/ServerRules/RulesFish/SubRules/FishSR92.xml"
+- type: guideEntry
+  id: FishSR93
+  name: guide-entry-fish-rule-9-3
+  ruleEntry: true
+  priority: 93
+  text: "/ServerInfo/Guidebook/ServerRules/RulesFish/SubRules/FishSR93.xml"
+- type: guideEntry
+  id: FishSR931
+  name: guide-entry-fish-rule-9-3-1
+  ruleEntry: true
+  priority: 931
+  text: "/ServerInfo/Guidebook/ServerRules/RulesFish/SubRules/FishSR931.xml"
