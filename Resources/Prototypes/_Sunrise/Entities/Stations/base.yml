@@ -12,7 +12,7 @@
   abstract: true
   components:
   - type: StationCentComm
-    station: SunriseCentComm
+    station: FishCentComm # Fish-edit
     shuttleWhitelist:
       components:
       - CentCommShuttle
