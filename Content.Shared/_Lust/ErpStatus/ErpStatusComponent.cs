@@ -7,6 +7,6 @@ namespace Content.Shared._Lust.ErpStatus
     public sealed partial class ErpStatusComponent : Component
     {
         [DataField(required: true), AutoNetworkedField]
-        public Erp Erp = Erp.Ask;
+        public Erp Erp = Erp.Yes; // Fish Astra-Edit
     }
 }
