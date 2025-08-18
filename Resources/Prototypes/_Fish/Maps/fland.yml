@@ -1,7 +1,7 @@
 - type: gameMap
-  id: SunriseFland
+  id: FishFland
   mapName: 'Fland'
-  mapPath: /Maps/_Sunrise/Station/fland.yml
+  mapPath: /Maps/_Fish/Station/fland.yml
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
@@ -13,9 +13,15 @@
           mapNameTemplate: '{0} Фланд {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'B'
+            prefixCreator: 'RS'
+        - type: SpawnGridAndDockToStation
+          grids:
+          - gridPath: /Maps/_Fish/Shuttles/mining.yml
+            priorityTag: DockMining
+          - gridPath: /Maps/_Fish/Shuttles/security.yml
+            priorityTag: DockSecurity
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Sunrise/Shuttles/emergency.yml
+          emergencyShuttlePath: /Maps/_Fish/Shuttles/emergency_fland.yml
         - type: StationJobs
           availableJobs:
             #command
@@ -59,9 +65,9 @@
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
-            Detective: [ 1, 1 ]
+            Detective: [ 2, 2 ]
             Brigmedic: [ 2, 2 ]
-            SecurityPilot: [ 1, 1 ]
+            SecurityPilot: [ 2, 2 ]
             SecurityOfficer: [ 5, 5 ]
             SecurityCadet: [ 5, 5 ]
             #supply
@@ -75,10 +81,13 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             #blueshield
-            BlueShieldOfficer: [ 1, 1 ]
+            BlueShieldEnsign: [ 1, 1 ]
+            BlueShieldOfficer: [ 2, 2 ]
+            RepresentativeBlueShield: [ 1, 1 ]
             #law
             IAA: [ 1, 1 ]
             Lawyer: [ 3, 3 ]
+            NtrOfficer: [ 3, 3 ]
             # silicon
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
@@ -126,4 +135,4 @@
           - HumanitarianAid
           - PersonnelRecovery
           - CrewEducation
-          #- VirusFlesh
+          - VirusFlesh

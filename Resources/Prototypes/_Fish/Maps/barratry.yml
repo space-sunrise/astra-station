@@ -1,21 +1,27 @@
 - type: gameMap
-  id: SunriseFland
-  mapName: 'Fland'
-  mapPath: /Maps/_Sunrise/Station/fland.yml
+  id: FishBarratry
+  mapName: 'Barratry'
+  mapPath: /Maps/_Fish/Station/barratry.yml
   maxRandomOffset: 0
-  randomRotation: false
   minPlayers: 0
+  randomRotation: false
   stations:
-    Fland:
+    Barratry:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Фланд {1}'
+          mapNameTemplate: '{0} Barratry {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'B'
+            prefixCreator: 'RS'
+        - type: SpawnGridAndDockToStation
+          grids:
+          - gridPath: /Maps/_Fish/Shuttles/mining.yml
+            priorityTag: DockMining
+          - gridPath: /Maps/_Fish/Shuttles/security.yml
+            priorityTag: DockSecurity
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Sunrise/Shuttles/emergency.yml
+          emergencyShuttlePath: /Maps/_Fish/Shuttles/emergency_barratry.yml
         - type: StationJobs
           availableJobs:
             #command
@@ -37,8 +43,8 @@
             #engineering
             ChiefEngineer: [ 1, 1 ]
             SeniorEngineer: [ 1, 1 ]
-            AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 5, 5 ]
+            AtmosphericTechnician: [ 4, 4 ]
+            StationEngineer: [ 6, 6 ]
             TechnicalAssistant: [ 5, 5 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
@@ -52,21 +58,21 @@
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
-            Scientist: [ 5, 5 ]
+            Scientist: [ 6, 6 ]
             ResearchAssistant: [ 5, 5 ]
-            Roboticist: [ 4, 4 ]
+            Roboticist: [ 3, 3 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
-            Detective: [ 1, 1 ]
+            Detective: [ 2, 2 ]
             Brigmedic: [ 2, 2 ]
-            SecurityPilot: [ 1, 1 ]
+            SecurityPilot: [ 2, 2 ]
             SecurityOfficer: [ 5, 5 ]
             SecurityCadet: [ 5, 5 ]
             #supply
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 3 ]
+            SalvageSpecialist: [ 4, 4 ]
             CargoTechnician: [ 3, 3 ]
             MailCarrier: [ 2, 2 ]
             #civilian
@@ -75,10 +81,13 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             #blueshield
-            BlueShieldOfficer: [ 1, 1 ]
+            BlueShieldEnsign: [ 1, 1 ]
+            BlueShieldOfficer: [ 2, 2 ]
+            RepresentativeBlueShield: [ 1, 1 ]
             #law
             IAA: [ 1, 1 ]
             Lawyer: [ 3, 3 ]
+            NtrOfficer: [ 3, 3 ]
             # silicon
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
@@ -100,7 +109,6 @@
           - Zoo
           - MiningOutpost
           - Tesla
-          - XenobiologyRepair
           - VirusologyAmbusol
           - Containment
           - WeaponsSecurity
@@ -123,7 +131,4 @@
           - Furs
           - Crew
           - CleaningUp
-          - HumanitarianAid
-          - PersonnelRecovery
-          - CrewEducation
           #- VirusFlesh
