@@ -1,9 +1,9 @@
 - type: roleLoadout
   id: JobIAA
   groups:
-  # - LawyerNeck
-  # - LawyerJumpsuit
-  # - CommonBackpack
+  # - LawyerNeck #Fish-edit
+  - LawyerJumpsuit
+  - CommonBackpack
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool

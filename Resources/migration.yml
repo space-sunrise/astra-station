@@ -843,9 +843,10 @@ PrinterDocFlatpack: CopyMachineFlatpack
 #Fish-start
 MechSecPod: null
 SpawnMechSecPodFilled: null
-LockerBlueShieldEnsignFilled: LockerBlueShieldOfficerFilled
+WeaponEnergyGunMultiphaseImproved: null
 SunriseMagazineRifleExtended: null
 #Fish-end
+
 
 # Astra-start
 VendingMachineCoffeeMigrateUnderwear: VendingMachineUnderwear
