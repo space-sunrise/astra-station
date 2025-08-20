@@ -1,24 +1,10 @@
-- type: department # Fish-Blueshield
-  id: BlueShield
-  name: department-Blueshield
-  description: department-Blueshield-description
-  color: "#0f4e81"
-  roles:
-   - BlueShieldEnsign
-   - BlueShieldOfficer
-   - RepresentativeBlueShield
-  #  - BlueShieldOperative
-  primary: false
-  weight: 60
-
-
 - type: department
   id: SpecialOperationsAlt
   name: department-SpecialOperations
   description: department-SpecialOperations-description
   color: "#0c344d"
   roles:
-   - SpecOpsOfficer #Fish-edit
+   - SpecOpsOfficer
   weight: 57
 
 - type: department
@@ -30,15 +16,3 @@
    - Magistrat
    - CentcommSectoralJudge
   weight: 55
-
-- type: department
-  id: Law
-  name: department-Law
-  description: department-Law-description
-  color: "#FF5297"
-  roles:
-   - OversightOfficer
-   - IAA
-   - Lawyer
-   - NtrOfficer
-  weight: 52
