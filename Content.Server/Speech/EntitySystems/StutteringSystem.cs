@@ -50,12 +50,12 @@ namespace Content.Server.Speech.EntitySystems
         private void OnAccent(Entity<StutteringAccentComponent> entity, ref StatusEffectRelayedEvent<AccentGetEvent> args)
         {
             // Lust-start
-            if (TryComp<VibratingComponent>(uid, out var pu))
+            if (TryComp<VibratingComponent>(entity.Owner, out var pu))
             {
-                component.MatchRandomProb = 0.3f;
-                component.FourRandomProb = 0;
-                component.ThreeRandomProb = 0;
-                component.CutRandomProb = 0;
+                entity.Comp.MatchRandomProb = 0.3f;
+                entity.Comp.FourRandomProb = 0;
+                entity.Comp.ThreeRandomProb = 0;
+                entity.Comp.CutRandomProb = 0;
             }
             // Lust-end
             args.Args.Message = Accentuate(args.Args.Message, entity.Comp);
