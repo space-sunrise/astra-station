@@ -51,3 +51,11 @@ guide-entry-fish-rule-3-9 = Правило 3.9
 guide-entry-fish-rule-4-1 = Правило 4.1
 
 guide-entry-fish-rule-4-2 = Правило 4.2
+
+guide-entry-fish-rule-9-1 = Правило 9.1
+
+guide-entry-fish-rule-9-2 = Правило 9.2
+
+guide-entry-fish-rule-9-3 = Правило 9.3
+
+guide-entry-fish-rule-9-3-1 = Правило 9.3.1

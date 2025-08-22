@@ -16,7 +16,6 @@ ent-RubberStampAdj = печать адъютанта
 ent-RubberStampNpt = печать начальника планетарной тюрьмы
     .desc = { ent-RubberStampBase.desc }
     .suffix = НЕ МАППИТЬ
-stamp-component-stamped-name-ntrep = Представитель Nanotrasen
 ent-RubberStampVeto = печать ВЕТО
     .desc = Последнее слово в споре. Твоё мнение никого не волнует.
 ent-RubberStampRedo = печать прошу доработать

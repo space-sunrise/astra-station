@@ -214,7 +214,7 @@ namespace Content.Server.Database
             if (Enum.TryParse<Sex>(profile.Sex, true, out var sexVal))
                 sex = sexVal;
 
-            var erp = Erp.Ask;
+            var erp = Erp.Yes; // Fish Astra-Edit
             if (Enum.TryParse<Erp>(profile.Erp, true, out var erpVal))
                 erp = erpVal;
 

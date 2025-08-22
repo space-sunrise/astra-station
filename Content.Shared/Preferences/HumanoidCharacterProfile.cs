@@ -84,7 +84,7 @@ namespace Content.Shared.Preferences
         public int Age { get; set; } = 18;
 
         [DataField]
-        public Erp Erp { get; set; } = Erp.Ask;
+        public Erp Erp { get; set; } = Erp.Yes; // Fish Astra-Edit
         [DataField]
         public Virginity Virginity { get; set; } = Virginity.No;
         [DataField]

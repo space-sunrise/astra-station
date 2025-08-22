@@ -1,17 +1,17 @@
 <p align="center">
-  <img alt="Space Station 14" height="128" src="https://fish.station.wiki.shizainc.com/media/fish-alt.png" />
+  <img alt="Space Station 14" height="256" src="https://i.ibb.co/BVnCdZJd/image-4959.png" />
 </p>
 
 <div class="header" align="center">
 
-[![Discord](https://img.shields.io/discord/1253315855731916821?label=Discord&logo=discord&logoColor=white)](https://discord.gg/lust-station)
-[![Wiki](https://img.shields.io/badge/Wiki-SS14%20SUNRISE-blue)](https://sunrise14.top/wiki/)
+[![Discord](https://img.shields.io/discord/1253315855731916821?label=Discord&logo=discord&logoColor=white)](https://fish.station.wiki.shizainc.com/aphrodite/discord)
+[![Wiki](https://img.shields.io/badge/Wiki-SS14%20FISH%20STATION%20ASTRA-blue)](https://fish.station.wiki.shizainc.com/aphrodite/)
 [![Steam](https://img.shields.io/badge/Steam-SS14%20SUNRISE-blue)](h ttps://store.steampowered.com/app/1255460/Space_Station_14/)
 [![Client](https://img.shields.io/badge/Client-Download-blue)](https://spacestation14.io/about/nightlies/)
 [![GitHub](https://img.shields.io/github/stars/space-sunrise/space-station-14?style=social)](https://github.com/space-sunrise/lust-station)
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/space-sunrise/sunrise-station?utm_source=oss&utm_medium=github&utm_camp aign=space-sunrise%2Fsunrise-station&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
-# Space Station 14 — Fish Station
+# Space Station 14 — Fish Station Astra
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/space-sunrise/lust-station)
 ![GitHub Issues](https://img.shields.io/github/issues/space-sunrise/lust-station)
