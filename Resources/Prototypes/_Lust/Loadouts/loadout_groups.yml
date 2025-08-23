@@ -1,4 +1,6 @@
-﻿# - type: loadoutGroup
+﻿# Astra-Start
+
+# - type: loadoutGroup
 #   id: QilluRepresentativeBackpack
 #   name: loadout-group-qillurepresentative-backpack
 #   loadouts:
@@ -10,6 +12,8 @@
 #   loadouts:
 #   - QilluRepresentativeCloak
 #   - QilluRepresentativeMantle
+
+# Astra-End
 
 - type: loadoutGroup
   id: CaptainHands

@@ -401,6 +401,13 @@
   - AdjutantOuterClothing
   - AdjutantBackpack
   - AdjutantHead
+  # Astra-start
+  - ComMaidHeadAstra
+  - ComMaidJumpsuitAstra
+  - ComMaidNeckAstra
+  - ComMaidShoesAstra
+  - ComMaidGlovesAstra
+  # Astra-end
   - Trinkets
   - Survival
   - GroupSpeciesBreathTool
