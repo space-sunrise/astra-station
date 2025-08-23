@@ -14,10 +14,14 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtElegantMaid
 
-- type: loadout
-  id: ComMaidLustJumpskirt
-  equipment:
-    jumpsuit: ClothingUniformSkirtLustMaid
+#Astra-start
+
+# - type: loadout
+#   id: ComMaidLustJumpskirt
+#   equipment:
+#     jumpsuit: ClothingUniformSkirtLustMaid
+
+#Astra-end
 
 - type: loadout
   id: ComMaidBunnyUniform

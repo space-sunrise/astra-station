@@ -10,6 +10,8 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 12000
+  setPreference: false #Astra-edit
+  overrideConsoleVisibility: false #Astra-edit
   startingGear: ComMaidGear
   icon: "JobIconComMaid"
   supervisors: job-supervisors-captain
