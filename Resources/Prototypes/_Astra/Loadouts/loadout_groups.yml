@@ -1,0 +1,55 @@
+# ComMaid Groups Astra edit
+- type: loadoutGroup
+  id: ComMaidHeadAstra
+  name: loadout-group-commaid-head-astra
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ComMaidNurseHat
+  - ComMaidBunnyEars
+  # - ComMaidTacticalHeadband
+
+- type: loadoutGroup
+  id: ComMaidJumpsuitAstra
+  name: loadout-group-commaid-jumpsuit-astra
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ComMaidElegantJumpskirt
+  # - ComMaidLustJumpskirt
+  - ComMaidBunnyUniform
+  # - ComMaidTacticalJumpskirt
+
+- type: loadoutGroup
+  id: ComMaidNeckAstra
+  name: loadout-group-commaid-neck-astra
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ComMaidCollarYellow
+  - ComMaidCollarPink
+  - ComMaidCollarPlain
+  - ComMaidCollarHeart
+  - ComMaidBunnyButterfly
+
+- type: loadoutGroup
+  id: ComMaidShoesAstra
+  name: loadout-group-commaid-shoes-astra
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ComMaidShoes
+  - ComMaidBunnyShoes
+
+- type: loadoutGroup
+  id: ComMaidGlovesAstra
+  name: loadout-group-commaid-gloves-astra
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ComMaidCatPawsWhite
+  - ComMaidCatPawsBlack
+  - ComMaidCatPawsBrown
+  - ComMaidBunnyManjets
+  - ComMaidGlovesWhite
+  # - ComMaidGlovesTactical
